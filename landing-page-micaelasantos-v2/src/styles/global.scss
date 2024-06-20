@@ -1,8 +1,16 @@
-/* src/styles.scss */
-$primary-color: #3498db;
+@use 'variaveis' as *;
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: $primary-color;
-  color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+    list-style: none;
 }
+
+
+
+a {
+    text-decoration: none;
+}
+
