@@ -7,7 +7,8 @@ const Sobre = () => {
     return (
         <section id='sobre' className={clsx(styles.s_sobre)}>
             <Container>
-                <h2 data-aos="slide-down" data-aos-duration="1000" className={clsx(styles.titulo, 'text-center pt-4 pb-4')}>Micaela Santos <br/>CRP 02/27486</h2>
+                <h2 data-aos="slide-down" data-aos-duration="1000" className={clsx(styles.titulo, 'text-center pt-4')}>Micaela Santos</h2>
+                <h4 data-aos="slide-down" data-aos-duration="1000" data-aos-delay="200" className={clsx(styles.subtitulo, 'text-center')}>CRP 02/27486</h4>
                 <Row className='my-auto'>
                     <Col data-aos="fade-right" data-aos-duration="1000" data-aos-delay="350" lg={7}>
                         <p className={styles.desc}>
@@ -32,4 +33,4 @@ const Sobre = () => {
     )
 }
 
-export default Sobre
+export default Sobre;

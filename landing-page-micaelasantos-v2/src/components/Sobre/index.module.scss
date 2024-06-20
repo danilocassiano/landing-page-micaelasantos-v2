@@ -8,11 +8,19 @@
 }
 
 .titulo {
-    @include tituloSecao($corDescricao)
+    @include tituloSecao($corDescricao);
+    margin-bottom: 0.2rem; /* Adiciona espaço mínimo abaixo do h2 */
+}
+
+.subtitulo {
+    color: #F0EBE6; /* Define a cor branca para o h4 */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.8rem; /* Reduz o espaço entre o h4 e o conteúdo abaixo */
 }
 
 .image {
-    height: 35rem;
+    height: 40rem;
     border-radius: 4rem;
     margin-left: 4rem;
 
@@ -27,5 +35,7 @@
 }
 
 .desc {
-    @include descricao($corDescricao)
+    @include descricao($corDescricao);
+    font-size: 1.4rem; 
+    line-height: 1.5; 
 }
