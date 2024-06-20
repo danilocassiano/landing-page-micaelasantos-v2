@@ -1,12 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
-import './styles/global.scss'
-import AOS from 'aos'
+import './styles/global.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-AOS.init();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,3 +12,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+AOS.init();

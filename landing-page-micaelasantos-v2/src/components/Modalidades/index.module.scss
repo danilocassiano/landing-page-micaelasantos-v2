@@ -1,0 +1,54 @@
+@use '../../styles/variaveis' as *;
+
+$corTitulo: #462217;
+
+@mixin tituloSecao($cor: $corTitulo, $size: 2.5rem, $weight: 600) {
+    color: $cor;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: 120%;
+}
+
+.title1 {
+    @include tituloSecao();
+    text-align: center;
+    padding-top: 2.5rem;
+}
+
+
+.modalidades-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .titulo {
+    font-family: 'Century Gothic', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-right: -40px;
+    margin-top: 50px;
+    margin-bottom: 2%;
+    // color: #FA8072;
+    color: #793D24;    
+    text-align: right;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .imagem {
+    text-align: center;
+  
+    img {
+      max-width: 40%;
+      max-height: 40%;
+      margin: auto;
+    }
+  }
+  
