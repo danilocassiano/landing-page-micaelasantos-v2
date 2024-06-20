@@ -13,42 +13,61 @@ $corTitulo: #462217;
     @include tituloSecao();
     text-align: center;
     padding-top: 2.5rem;
-}
 
+    @media (max-width: 768px) {
+        font-size: 2rem; // Reduz o tamanho do título em telas menores
+    }
+}
 
 .modalidades-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .titulo {
-    font-family: 'Century Gothic', sans-serif;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.6rem;
-    margin-right: -40px;
-    margin-top: 50px;
-    margin-bottom: 2%;
-    // color: #FA8072;
-    color: #793D24;    
-    text-align: right;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .imagem {
+    padding: 20px;
     text-align: center;
-  
-    img {
-      max-width: 40%;
-      max-height: 40%;
-      margin: auto;
+
+    .titulo {
+        font-family: 'Century Gothic', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-right: -40px;
+        margin-top: 50px;
+        margin-bottom: 2%;
+        color: #793D24;
+        text-align: right;
+
+        @media (max-width: 768px) {
+            font-size: 1.4rem; // Ajusta o tamanho do título em telas menores
+            margin-top: 30px;
+            margin-bottom: 1%;
+            text-align: center; // Centraliza o texto em telas menores
+        }
     }
-  }
-  
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; // Um card por linha em telas menores
+            gap: 0.5rem; // Reduz o espaçamento entre os itens em telas menores
+        }
+    }
+
+    .imagem {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+
+            @media (max-width: 768px) {
+                max-width: 80%; // Ajusta o tamanho máximo da imagem em telas menores
+            }
+        }
+    }
+}
