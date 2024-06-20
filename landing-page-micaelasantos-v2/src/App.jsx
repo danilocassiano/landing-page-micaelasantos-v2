@@ -1,3 +1,5 @@
+import Contato from "./components/Contato/Contato.jsx"
+import Footer from "./components/Footer/Footer.jsx"
 import Home from "./components/Home/Home.jsx"
 import Infos from "./components/Infos/Infos.jsx"
 import Modalidades from "./components/Modalidades/Modalidades.jsx"
@@ -14,7 +16,9 @@ function App() {
     <Infos /> 
     <Servicos />   
     <Sobre />
-    <Modalidades />   
+    <Modalidades />  
+    <Contato />
+    <Footer /> 
     </>
   )
 }
