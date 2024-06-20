@@ -1,10 +1,13 @@
 import Home from "./components/Home/Home.jsx"
+import NavbarHome from "./components/Navbar/Navbar.jsx"
 
 
 function App() {
    return (
     <>
-    <Home />      
+    <NavbarHome />    
+    <Home />  
+      
     </>
   )
 }
