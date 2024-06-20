@@ -9,14 +9,14 @@
 
 .titulo {
     @include tituloSecao($corDescricao);
-    margin-bottom: 0.2rem; /* Adiciona espaço mínimo abaixo do h2 */
+    margin-bottom: 0.2rem; 
 }
 
 .subtitulo {
-    color: #F0EBE6; /* Define a cor branca para o h4 */
+    color: #F0EBE6; 
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0.8rem; /* Reduz o espaço entre o h4 e o conteúdo abaixo */
+    margin-bottom: 0.8rem; 
 }
 
 .image {

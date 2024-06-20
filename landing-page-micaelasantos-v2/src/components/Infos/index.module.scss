@@ -3,8 +3,7 @@
 .s_infos {
     min-height: 100vh;
     background-color: $corItens;
-    // position: sticky;
-    
+
     .tabs {
         padding-top: 5rem;
         display: flex;
@@ -27,9 +26,8 @@
     }
 
     .list {
-        
         &__psicoterapia {
-            padding-top: 3rem;
+            padding-top: 4rem; /* Aumenta o espaço entre o botão e o conteúdo */
 
             &__img {
                 text-align: center;
@@ -37,8 +35,11 @@
                     display: block;
                 }
                 &__foto {
+                    margin-left: -15rem;
+                    height: 40rem; /* Aumenta o tamanho da imagem */
+                    object-fit: cover; /* Garante que a imagem se ajuste bem */
                     @media screen and (max-width: 576px) {
-                            height: 200px;
+                        height: 200px;
                     }
                 }
 
@@ -51,8 +52,7 @@
                             height: 400px
                         }
                         height: 38rem;
-                        object-fit: cover
-                        
+                        object-fit: cover;
                     }
                 }
             }
@@ -61,22 +61,23 @@
                 @include tituloSecao($corDescricao);
                 text-align: end;
                 &__forense {
-                    text-align: start
+                    text-align: start;
                 }
 
                 @media screen and (max-width: 315px) {
-                    font-size: 2rem
+                    font-size: 2rem;
                 }
             }
             &__desc {
                 @include descricao;
-                text-align: end;               
+                font-size: 1.4rem; 
+                line-height: 1.6; 
+                text-align: end;
 
                 &__forense {
-                    text-align: start
+                    text-align: start;
                 }
             }
         }
-    
     }
 }
