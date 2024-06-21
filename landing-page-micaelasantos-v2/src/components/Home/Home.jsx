@@ -1,7 +1,7 @@
 import styles from './index.module.scss'
+import clsx from 'clsx';
 import foto from './assets/Micaela.png'
 import Container from 'react-bootstrap/Container';
-import clsx from 'clsx';
 
 function Home() {
 
@@ -36,5 +36,4 @@ function Home() {
         </>
     );
 }
-
-export default Home
+    export default Home
