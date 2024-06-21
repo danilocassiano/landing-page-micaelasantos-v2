@@ -5,9 +5,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['bootstrap',
-        'clsx'
-      ]
+      external: ['bootstrap', 'clsx']
     }
-  }
+  },
+  server: {
+    port: 3000,
+  },
 });
