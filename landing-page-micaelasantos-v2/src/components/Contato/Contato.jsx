@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import styles from './index.module.scss'
 import { AiOutlineInstagram, AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai'
 import clsx from 'clsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Contato = () => {
     return (
