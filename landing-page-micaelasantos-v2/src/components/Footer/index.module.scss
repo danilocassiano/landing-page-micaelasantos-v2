@@ -1,6 +1,10 @@
 @use '../../styles/variaveis' as *;
 
 .footer {
+    background-color: $corSecao; 
+    padding: 1rem; 
+
+    @include descricao($corPreto, 400, 1rem); 
     @media screen and (max-width: 578px) {
         font-size: 0.45rem;
     }

@@ -5,7 +5,7 @@
   height: 900px; 
   border-radius: 10px;
   overflow: hidden;
-  background: #793D24;
+  background: $corSecao; 
   margin-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -19,7 +19,7 @@
   width: 100%;
   height: 245px; 
   position: relative;
-  background: rgba(165, 42, 42, 0.2);
+  background: rgba($corItens, 0.2); 
   border-radius: 10px 10px 0 0;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@
 .image-container .frase {
   font-style: italic;
   font-weight: bold;
-  color: white;
+  color: $corBranco; 
   font-size: 1.2rem; 
   position: absolute;
   top: 50%;
@@ -51,7 +51,7 @@
 .text {
   flex: 1;
   margin: 5%;
-  color: white;
+  color: $corBranco; 
   margin-top: 1%;
   text-align: center;
   font-size: 1rem; 

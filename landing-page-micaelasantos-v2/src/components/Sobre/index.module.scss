@@ -1,7 +1,7 @@
 @use '../../styles/variaveis' as *;
 
 .s_sobre {
-    background-color: #793D24;
+    background-color: $corItens;
     min-height: 100vh;
     padding-top: 3rem;
     padding-bottom: 20px;
@@ -13,7 +13,7 @@
 }
 
 .subtitulo {
-    color: #F0EBE6; 
+    color: $corDescricao; 
     text-align: center;
     margin-top: 0;
     margin-bottom: 0.8rem; 

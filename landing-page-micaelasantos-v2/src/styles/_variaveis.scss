@@ -14,7 +14,7 @@ $whatsapp: #25D366;
     line-height: 120%;
 }
 
-@mixin descricao($cor: $corDescricao, $weight: 400, $size : 1rem) {
+@mixin descricao($cor: $corDescricao, $weight: 400, $size: 1rem) {
     color: $cor;
     font-size: $size;
     font-weight: $weight;
@@ -43,7 +43,7 @@ $whatsapp: #25D366;
     @else if $breakpoint == 'xxl' {
         @media (max-width: 1400px) { @content; }
     }
-    @else if $breakpoint != 'xl' and 'lg' and 'md' and 'sm' and 'xxl' {
+    @else {
         @media (max-width: $breakpoint) { @content; }
     }
 }

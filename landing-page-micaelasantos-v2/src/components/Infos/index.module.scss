@@ -20,14 +20,14 @@
             text-transform: uppercase;
         }
         &__buttonIsActive {
-            transition: all .5s ease 0s;
+            transition: all 0.5s ease 0s;
             border-bottom: 5px solid $corDescricao;    
         }
     }
 
     .list {
         &__psicoterapia {
-            padding-top: 4rem; /* Aumenta o espaço entre o botão e o conteúdo */
+            padding-top: 4rem;
 
             &__img {
                 text-align: center;
@@ -36,8 +36,8 @@
                 }
                 &__foto {
                     margin-left: -15rem;
-                    height: 40rem; /* Aumenta o tamanho da imagem */
-                    object-fit: cover; /* Garante que a imagem se ajuste bem */
+                    height: 40rem;
+                    object-fit: cover;
                     @media screen and (max-width: 576px) {
                         height: 200px;
                     }
@@ -49,7 +49,7 @@
                     }
                     &__img {
                         @media screen and (max-width: 576px) {
-                            height: 400px
+                            height: 400px;
                         }
                         height: 38rem;
                         object-fit: cover;
@@ -70,8 +70,8 @@
             }
             &__desc {
                 @include descricao;
-                font-size: 1.4rem; 
-                line-height: 1.6; 
+                font-size: 1.4rem;
+                line-height: 1.6;
                 text-align: end;
 
                 &__forense {

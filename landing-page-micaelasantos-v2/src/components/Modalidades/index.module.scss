@@ -34,7 +34,7 @@ $corTitulo: #462217;
         margin-right: -40px;
         margin-top: 50px;
         margin-bottom: 2%;
-        color: #793D24;
+        color: $corSecao; 
         text-align: right;
 
         @media (max-width: 768px) {
@@ -53,7 +53,7 @@ $corTitulo: #462217;
 
         @media (max-width: 768px) {
             grid-template-columns: 1fr; // Um card por linha em telas menores
-            gap: 0.5rem; // Reduz o espaçamento entre os itens em telas menores
+            gap: 0.5rem; 
         }
     }
 

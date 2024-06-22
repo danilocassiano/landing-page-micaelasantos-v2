@@ -12,6 +12,7 @@
     padding: 1rem 3rem;
     margin: 0 auto;
     border: none;
+    
     @include mq('sm') {
         display: block;
     }
@@ -27,17 +28,16 @@
     }
 
     &:hover {
-        transition: all .25s;
+        transition: all 0.25s;
         color: $corPreto;
-        background-color: rgba($color: $whatsapp, $alpha: 0.75);
+        background-color: rgba($whatsapp, 0.75);
     }
-
 }
 
 .titulo {
     padding-top: 2.5rem;
     padding-bottom: 0.5rem;
-    @include tituloSecao($corDescricao)
+    @include tituloSecao($corDescricao);
 }
 
 .desc {
@@ -49,7 +49,7 @@
     @include descricao($corDescricao, 500, 1rem);
 
     @include mq('sm') {
-       font-size: 14px;
+        font-size: 14px;
     }
 }
 
