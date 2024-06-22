@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
 import NavbarHome from "./components/Navbar/Navbar.jsx";
 import Home from "./components/Home/Home.jsx";
 import Infos from "./components/Infos/Infos.jsx";
@@ -10,11 +8,7 @@ import Contato from "./components/Contato/Contato.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
-  return (
+  return (    
     <>
       <NavbarHome />
       <Home />
