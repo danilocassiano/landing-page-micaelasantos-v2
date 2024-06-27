@@ -23,9 +23,9 @@ const Sobre = () => {
                             <br />
                             Se você está enfrentando desafios emocionais, buscando compreender melhor a si mesmo ou lidar com questões específicas, estou aqui para ajudar. Entre em contato e vamos juntos iniciar essa jornada rumo ao seu equilíbrio emocional e desenvolvimento pessoal.
                         </p>
-                    </Col>
+                    </Col>                    
                     <Col data-aos="fade-out" data-aos-duration="1000" data-aos-delay="350" lg={5}>
-                        <img className={clsx(styles.image)} src={foto} alt="Foto Dra. Thayse" />
+                        <img className={clsx(styles.image)} src={foto} alt="Foto sobre" />
                     </Col>
                 </Row>
             </Container>
