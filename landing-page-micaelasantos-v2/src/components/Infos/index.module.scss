@@ -32,7 +32,7 @@
             &__img {
                 text-align: center;
                 @include mq('lg') {
-                    display: block;
+                    display: none;
                 }
                 &__foto {
                     margin-left: -15rem;
@@ -45,7 +45,7 @@
 
                 &__forense {
                     @include mq('lg') {
-                        // display: none;
+                        display: none;
                     }
                     &__img {
                         @media screen and (max-width: 576px) {
